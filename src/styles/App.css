@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 960px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header component */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* JobItem component */
+.job-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.job-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-item h2 {
+  margin-top: 0;
+}
+
+.job-item p {
+  margin: 5px 0;
+}
+
+/* JobForm component */
+.job-form {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.job-form input[type="text"],
+.job-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.job-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-form button:hover {
+  background-color: #555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
